@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topos", "Topos.csproj", "{2900C252-417F-8005-E240-B3DB2841B453}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topos.Plugins", "Topos.Plugins.csproj", "{4E46C4AE-AE10-AFC0-F3CE-3A20A112CA80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topos.Editor.Plugins", "Topos.Editor.Plugins.csproj", "{66DE9443-0AD2-E96D-9302-914B85EA660C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topos.Editor", "Topos.Editor.csproj", "{BD2104E8-8EF0-3C2D-0FCB-F992D999480F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2900C252-417F-8005-E240-B3DB2841B453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2900C252-417F-8005-E240-B3DB2841B453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2900C252-417F-8005-E240-B3DB2841B453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2900C252-417F-8005-E240-B3DB2841B453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E46C4AE-AE10-AFC0-F3CE-3A20A112CA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E46C4AE-AE10-AFC0-F3CE-3A20A112CA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E46C4AE-AE10-AFC0-F3CE-3A20A112CA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E46C4AE-AE10-AFC0-F3CE-3A20A112CA80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DE9443-0AD2-E96D-9302-914B85EA660C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DE9443-0AD2-E96D-9302-914B85EA660C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66DE9443-0AD2-E96D-9302-914B85EA660C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DE9443-0AD2-E96D-9302-914B85EA660C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD2104E8-8EF0-3C2D-0FCB-F992D999480F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2104E8-8EF0-3C2D-0FCB-F992D999480F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2104E8-8EF0-3C2D-0FCB-F992D999480F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2104E8-8EF0-3C2D-0FCB-F992D999480F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
