@@ -306,10 +306,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Juego\FollowPlayer.cs" />
-    <Compile Include="Assets\Juego\GameManager.cs" />
-    <Compile Include="Assets\Juego\Press_Space_to_Fire.cs" />
-    <Compile Include="Assets\Juego\TimedSpawn.cs" />
+    <Compile Include="Assets\Juego\Prefabs\WR_wHiteRabbiT-sTudio\WRFramework\Unity\Extensions\VectorExtensions.cs" />
+    <Compile Include="Assets\Juego\Prefabs\WR_wHiteRabbiT-sTudio\WRFramework\Unity\UI\GUIHelper.cs" />
+    <Compile Include="Assets\Juego\Prefabs\WR_wHiteRabbiT-sTudio\WRFramework\Unity\Util\Logo.cs" />
+    <Compile Include="Assets\Juego\Script\GameManager.cs" />
+    <Compile Include="Assets\Juego\Script\Topos.cs" />
     <Compile Include="Assets\Script\CameraFocusController.cs" />
     <Compile Include="Assets\Script\rotObj.cs" />
     <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
@@ -347,12 +348,10 @@
     <Compile Include="Assets\Vuforia\Scripts\WireframeBehaviour.cs" />
     <Compile Include="Assets\Vuforia\Scripts\WireframeTrackableEventHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\WordBehaviour.cs" />
-    <Compile Include="Assets\WR_wHiteRabbiT-sTudio\WRFramework\Unity\Extensions\VectorExtensions.cs" />
-    <Compile Include="Assets\WR_wHiteRabbiT-sTudio\WRFramework\Unity\UI\GUIHelper.cs" />
-    <Compile Include="Assets\WR_wHiteRabbiT-sTudio\WRFramework\Unity\Util\Logo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\BrokenVector\FreeLowPolyPack\readme.txt" />
+    <None Include="Assets\Juego\Prefabs\BrokenVector\FreeLowPolyPack\readme.txt" />
+    <None Include="Assets\Juego\Prefabs\WR_wHiteRabbiT-sTudio\Scene\DancingRabbit\ReadMe.txt" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\iOS\Vuforia.UnityExtensions.iOS.XML" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
@@ -369,7 +368,6 @@
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
-    <None Include="Assets\WR_wHiteRabbiT-sTudio\Scene\DancingRabbit\ReadMe.txt" />
     <None Include="Assets\license_3rdpartynotice.txt" />
     <None Include="Assets\link.xml" />
     <None Include="Assets\readme_SDK.txt" />

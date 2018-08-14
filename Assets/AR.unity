@@ -375,10 +375,10 @@ RectTransform:
   m_Father: {fileID: 438479044}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 428.3, y: 156.7}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -74.7}
+  m_SizeDelta: {x: 404.3, y: 147.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70206155
 MonoBehaviour:
@@ -401,12 +401,12 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 0
     m_MaxSize: 50
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 100678213}
   m_Layer: 0
   m_Name: Topo3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 106722158}
   m_Layer: 0
   m_Name: Topo8
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -523,6 +523,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7053e935c73f5b64b9bea9f9fde2bc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &107053307
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 107053302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.88, y: 6.13, z: 1.36}
+  m_Center: {x: 0, y: 1.23, z: 0}
 --- !u!1001 &130717991
 Prefab:
   m_ObjectHideFlags: 0
@@ -700,6 +712,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7053e935c73f5b64b9bea9f9fde2bc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &205294777
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205294772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.88, y: 6.13, z: 1.36}
+  m_Center: {x: 0, y: 1.23, z: 0}
 --- !u!4 &211380653 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4978993132652972, guid: 510a55b5c4aed6945a274d56d5790da3,
@@ -866,6 +890,9 @@ MonoBehaviour:
   tocado7: 0
   tocado8: 0
   tocado9: 0
+  TiempoText: {fileID: 532970715}
+  FinalScore: {fileID: 70206155}
+  Win: {fileID: 438479043}
   Topo1: {fileID: 536199844}
   Topo2: {fileID: 1033969762}
   Topo3: {fileID: 107053302}
@@ -935,7 +962,7 @@ GameObject:
   - component: {fileID: 297101254}
   m_Layer: 0
   m_Name: Topo7
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -990,6 +1017,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7053e935c73f5b64b9bea9f9fde2bc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &321890311
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 321890306}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.88, y: 6.13, z: 1.36}
+  m_Center: {x: 0, y: 1.23, z: 0}
 --- !u!1 &356107402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +1062,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 1}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &356107404
 MonoBehaviour:
@@ -1108,6 +1147,10 @@ Prefab:
     - target: {fileID: 400108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.035419125
+      objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
@@ -1242,7 +1285,7 @@ GameObject:
   - component: {fileID: 427093814}
   m_Layer: 0
   m_Name: Topo1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1398,6 +1441,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7053e935c73f5b64b9bea9f9fde2bc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &455642231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 455642226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.88, y: 6.13, z: 1.36}
+  m_Center: {x: 0, y: 1.23, z: 0}
 --- !u!4 &458832046 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4978993132652972, guid: 510a55b5c4aed6945a274d56d5790da3,
@@ -1523,6 +1578,80 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab5e0beb1c36778479983f28b65d97dd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &532970714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 532970717}
+  - component: {fileID: 532970716}
+  - component: {fileID: 532970715}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &532970715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 532970714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 1, b: 0.006896496, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 66
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &532970716
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 532970714}
+--- !u!224 &532970717
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 532970714}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 961837092}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -84.8, y: -23.05}
+  m_SizeDelta: {x: 169.59998, y: 46.1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &536199844 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
@@ -1559,6 +1688,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7053e935c73f5b64b9bea9f9fde2bc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &536199849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 536199844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.88, y: 6.13, z: 1.36}
+  m_Center: {x: 0, y: 1.23, z: 0}
 --- !u!1001 &550054421
 Prefab:
   m_ObjectHideFlags: 0
@@ -2214,7 +2355,7 @@ GameObject:
   - component: {fileID: 815177067}
   m_Layer: 0
   m_Name: Topo6
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2345,6 +2486,10 @@ Prefab:
     - target: {fileID: 400108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.035419125
+      objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
@@ -2519,6 +2664,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7053e935c73f5b64b9bea9f9fde2bc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &927445524
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 927445519}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.88, y: 6.13, z: 1.36}
+  m_Center: {x: 0, y: 1.23, z: 0}
 --- !u!1 &961837091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2546,6 +2703,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1396872882}
+  - {fileID: 532970717}
   m_Father: {fileID: 1010565410}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2955,6 +3113,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7053e935c73f5b64b9bea9f9fde2bc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1033969767
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033969762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.88, y: 6.13, z: 1.36}
+  m_Center: {x: 0, y: 1.23, z: 0}
 --- !u!1001 &1035945466
 Prefab:
   m_ObjectHideFlags: 0
@@ -3064,6 +3234,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.035419125
       objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
   m_IsPrefabParent: 0
@@ -3117,6 +3291,10 @@ Prefab:
     - target: {fileID: 400108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.035419125
+      objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
@@ -3352,7 +3530,7 @@ GameObject:
   - component: {fileID: 1343487969}
   m_Layer: 0
   m_Name: Topo2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3483,6 +3661,10 @@ Prefab:
     - target: {fileID: 400108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.035419125
+      objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
@@ -3729,6 +3911,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.035419125
       objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
   m_IsPrefabParent: 0
@@ -3765,8 +3951,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -7, y: 145}
-  m_SizeDelta: {x: 75, y: 75}
+  m_AnchoredPosition: {x: 0.0000038147, y: 99.7}
+  m_SizeDelta: {x: 38.66, y: 38.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1456658180
 MonoBehaviour:
@@ -3916,6 +4102,10 @@ Prefab:
     - target: {fileID: 400108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.035419125
+      objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
@@ -4178,7 +4368,7 @@ GameObject:
   - component: {fileID: 1642312015}
   m_Layer: 0
   m_Name: Topo4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4300,6 +4490,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7053e935c73f5b64b9bea9f9fde2bc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1656575838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1656575833}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.88, y: 6.13, z: 1.36}
+  m_Center: {x: 0, y: 1.23, z: 0}
 --- !u!1001 &1689052029
 Prefab:
   m_ObjectHideFlags: 0
@@ -4390,6 +4592,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7053e935c73f5b64b9bea9f9fde2bc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1718845360
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718845355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.88, y: 6.13, z: 1.36}
+  m_Center: {x: 0, y: 1.23, z: 0}
 --- !u!1001 &1730520990
 Prefab:
   m_ObjectHideFlags: 0
@@ -4521,7 +4735,7 @@ GameObject:
   - component: {fileID: 1804127001}
   m_Layer: 0
   m_Name: Topo9
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4729,6 +4943,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.035419125
       objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
   m_IsPrefabParent: 0
@@ -4787,6 +5005,10 @@ Prefab:
     - target: {fileID: 400108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.035419125
+      objectReference: {fileID: 0}
+    - target: {fileID: 100108, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 059659377357c7f4da639e9b3ab32204, type: 3}
@@ -4886,7 +5108,7 @@ GameObject:
   - component: {fileID: 2088741280}
   m_Layer: 0
   m_Name: Topo5
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
