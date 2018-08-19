@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour {
     public Text TiempoText;
     public Text FinalScore;
 
+    public Text Highscore;
+    private int highscore;
+
     private int scoreCoins;
     private int random;
 
@@ -26,9 +29,10 @@ public class GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        Time.timeScale = 1;
         Instance = this;
         esperar = 4;
-        score.text = "Score: " + scoreCoins.ToString("0");
+        score.text = "Puntaje: " + scoreCoins.ToString("0");
         TiempoText.text = "Segundos: " + tiempo.ToString("0");
         StartCoroutine(RandomSelect(esperar));
     }
@@ -60,8 +64,21 @@ public class GameManager : MonoBehaviour {
 
         if(tiempo <= 0)
         {
+            Time.timeScale = 0;
+            tiempo = 0;
             Win.SetActive(true);
-            FinalScore.text = "Final Score: " + scoreCoins.ToString("0");
+            FinalScore.text = "Puntaje Final: " + scoreCoins.ToString("0");
+
+            highscore = PlayerPrefs.GetInt("highscore");
+            Highscore.text = "Maximo Puntaje: " + highscore.ToString("0");
+
+            if (scoreCoins > highscore)
+            {
+                highscore = scoreCoins;
+                Highscore.text = "Maximo Puntaje: " + highscore.ToString("0");
+
+                PlayerPrefs.SetInt("highscore", highscore);
+            }
         }
     }
 
