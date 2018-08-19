@@ -163,7 +163,7 @@ public class GameManager : MonoBehaviour {
     public void GetCoin()
     {
         scoreCoins++;
-        score.text = "Score: " + scoreCoins.ToString("0");
+        score.text = "Puntaje: " + scoreCoins.ToString("0");
     }
 
     public void Resetiar()
