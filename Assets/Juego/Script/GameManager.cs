@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour {
     public Text Highscore;
     private int highscore;
 
+    private bool tocado;
+
     private int scoreCoins;
     private int random;
 
@@ -31,7 +33,7 @@ public class GameManager : MonoBehaviour {
     void Start () {
         Time.timeScale = 1;
         Instance = this;
-        esperar = 4;
+        esperar = 1.5f;
         score.text = "Puntaje: " + scoreCoins.ToString("0");
         TiempoText.text = "Segundos: " + tiempo.ToString("0");
         StartCoroutine(RandomSelect(esperar));
@@ -50,6 +52,8 @@ public class GameManager : MonoBehaviour {
                     if(Topos.tocado == false)
                     {
                         GetCoin();
+                        Invoke("Bajar", 0.1f);
+                        //tocado = true;
                         Topos.tocado = true;
                     }
                 }
@@ -84,44 +88,44 @@ public class GameManager : MonoBehaviour {
 
     public void Animar()
     {
-        float random2 = Random.Range(0.5f, 2.5f);
+        //float random2 = Random.Range(0.5f, 2.5f);
         switch (random)
         {
             case 1:
                 Topo1.GetComponent<Animator>().SetTrigger("Subir");
-                Invoke("Bajar", random2);
+                //Invoke("Bajar", random2);
                 break;
             case 2:
                 Topo2.GetComponent<Animator>().SetTrigger("Subir");
-                Invoke("Bajar", random2);
+                //Invoke("Bajar", random2);
                 break;
             case 3:
                 Topo3.GetComponent<Animator>().SetTrigger("Subir");
-                Invoke("Bajar", random2);
+                //Invoke("Bajar", random2);
                 break;
             case 4:
                 Topo4.GetComponent<Animator>().SetTrigger("Subir");
-                Invoke("Bajar", random2);
+                //Invoke("Bajar", random2);
                 break;
             case 5:
                 Topo5.GetComponent<Animator>().SetTrigger("Subir");
-                Invoke("Bajar", random2);
+                //Invoke("Bajar", random2);
                 break;
             case 6:
                 Topo6.GetComponent<Animator>().SetTrigger("Subir");
-                Invoke("Bajar", random2);
+                //Invoke("Bajar", random2);
                 break;
             case 7:
                 Topo7.GetComponent<Animator>().SetTrigger("Subir");
-                Invoke("Bajar", random2);
+                //Invoke("Bajar", random2);
                 break;
             case 8:
                 Topo8.GetComponent<Animator>().SetTrigger("Subir");
-                Invoke("Bajar", random2);
+                //Invoke("Bajar", random2);
                 break;
             case 9:
                 Topo9.GetComponent<Animator>().SetTrigger("Subir");
-                Invoke("Bajar", random2);
+                //Invoke("Bajar", random2);
                 break;
         }
     }
