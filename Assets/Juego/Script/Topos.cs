@@ -4,10 +4,64 @@ using UnityEngine;
 
 public class Topos : MonoBehaviour {
 
-    public static bool tocado;
+    public bool subido;
+    public bool tocado;
+    
+    private int random;
+    private int random2;
 
-    public void Reset()
+    private float tiempo;
+
+
+
+    public void Start()
     {
-        tocado = false;
+        RandomSelect();
+    }
+
+    public void Update()
+    {
+        tiempo += Time.deltaTime;
+        if(tiempo >= random)
+        {
+            if(subido == false)
+            {
+                GetComponent<Animator>().SetTrigger("Subir");
+                subido = true;
+            }
+            if(tocado == false)
+            {
+                if (tiempo >= random + random2)
+                {
+                    GetComponent<Animator>().SetTrigger("Bajar");
+                    tiempo = 0;
+                    RandomSelect();
+                    subido = false;
+                }
+            }
+
+        }
+        if (tocado == true)
+        {
+            GameManager.Instance.noMasMonedas = true;
+            GameManager.Instance.GetCoin();
+            GetComponent<Animator>().SetTrigger("Bajar");
+            tiempo = 0;
+            RandomSelect();
+            subido = false;
+            tocado = false;
+        }
+
+    }
+
+    public void Resetiar()
+    {
+        GameManager.Instance.noMasMonedas = false;
+    }
+
+    public void RandomSelect()
+    {
+        random = Random.Range(2, 10);
+        random2 = Random.Range(1, 3);
     }
 }
