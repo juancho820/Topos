@@ -183,3 +183,4 @@ d2a2bd333db22f480a8589e167314ecc Assembly-CSharp.dll:Vuforia.UserDefinedTargetBu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CameraFocusController
 ad2f1b6b3421d08e90f4d243a8405817 Assembly-CSharp.dll:.GameManager
 7cac06ac0eaa7257b831c29e4455ce1b Assembly-CSharp.dll:Vuforia.VuforiaConfiguration
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.detected

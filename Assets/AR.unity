@@ -888,6 +888,7 @@ MonoBehaviour:
   score: {fileID: 1396872880}
   TiempoText: {fileID: 532970715}
   FinalScore: {fileID: 70206155}
+  noMasMonedas: 0
   Highscore: {fileID: 1969715167}
   Win: {fileID: 438479043}
 --- !u!4 &287186141
@@ -925,8 +926,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 295748109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.023, y: -0.003, z: -0.023524}
+  m_LocalScale: {x: 1.4982841, y: 1.4982845, z: 1.4982845}
   m_Children:
   - {fileID: 427093814}
   - {fileID: 1343487969}
@@ -2024,8 +2025,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 755606227}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0087, y: 0.004, z: 0.0131}
-  m_LocalScale: {x: 0.18191563, y: 0.20326789, z: 0.13964614}
+  m_LocalPosition: {x: -0.009965003, y: 0.0029900074, z: -0.0038962}
+  m_LocalScale: {x: 0.27256128, y: 0.30455312, z: 0.20922965}
   m_Children: []
   m_Father: {fileID: 675007263}
   m_RootOrder: 2
@@ -2859,8 +2860,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1006947138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0087, y: 0.006, z: 0.0131}
-  m_LocalScale: {x: 0.08732944, y: 0.097579636, z: 0.06703808}
+  m_LocalPosition: {x: -0.009965003, y: 0.0059899986, z: -0.0038962}
+  m_LocalScale: {x: 0.13084431, y: 0.14620206, z: 0.10044212}
   m_Children: []
   m_Father: {fileID: 675007263}
   m_RootOrder: 0
@@ -4312,8 +4313,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1635789486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.023000002, y: -0.0029999912, z: -0.023524}
+  m_LocalScale: {x: 1.4982841, y: 1.4982845, z: 1.4982845}
   m_Children:
   - {fileID: 552489769}
   - {fileID: 839918110}
@@ -5256,3 +5257,18 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 384a0d8cc71cef74a873b3353337ea2c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2141294964 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 384a0d8cc71cef74a873b3353337ea2c, type: 2}
+  m_PrefabInternal: {fileID: 2141294963}
+--- !u!114 &2141294965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2141294964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8fc5be525dab594cb0383444f6a772d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
