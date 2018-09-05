@@ -5,43 +5,55 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
-    public Text score;
-    public Text TiempoText;
-    public Text FinalScore;
+
+    [SerializeField]
+    private Text score;
+    [SerializeField]
+    private Text tiempoText;
+    [SerializeField]
+    private Text finalScore;
+    [SerializeField]
+    private Text highScore;
+    private int highscore;
 
     public bool noMasMonedas;
-
-    public Text Highscore;
-    private int highscore;
 
     private int scoreCoins;
 
     private float tiempo = 40;
 
-    public GameObject Win;
+    [SerializeField]
+    public GameObject win;
+    public GameObject touch;
 
     private RaycastHit hit;
-    private Ray Ray;
+    private Ray ray;
+
+    Vector3 worldPos;
+    Vector2 wantedScreenSpawnPos;
 
     public static GameManager Instance { set; get; }
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         Time.timeScale = 1;
         Instance = this;
         score.text = "Puntaje: " + scoreCoins.ToString("0");
-        TiempoText.text = "Segundos: " + tiempo.ToString("0");
+        tiempoText.text = "Segundos: " + tiempo.ToString("0");
     }
 	
 	// Update is called once per frame
-	void Update () {
-
+	void Update ()
+    {
         if (Input.touchCount > 0 || Input.GetTouch(0).phase == TouchPhase.Began)
         {
-            Ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-            if (Physics.Raycast(Ray, out hit, Mathf.Infinity))
+            ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                if(hit.transform.tag == "Enemy")
+                touch.transform.position = new Vector3(hit.point.x,hit.point.y, 0.008f);
+                touch.SetActive(true);
+                if (hit.transform.tag == "Enemy")
                 {
                     if(noMasMonedas == false)
                     {
@@ -55,22 +67,22 @@ public class GameManager : MonoBehaviour {
     private void FixedUpdate()
     {
         tiempo -= Time.fixedDeltaTime;
-        TiempoText.text = "Segundos: " + tiempo.ToString("0");
+        tiempoText.text = "Segundos: " + tiempo.ToString("0");
 
         if(tiempo <= 0)
         {
             Time.timeScale = 0;
             tiempo = 0;
-            Win.SetActive(true);
-            FinalScore.text = "Puntaje Final: " + scoreCoins.ToString("0");
+            win.SetActive(true);
+            finalScore.text = "Puntaje Final: " + scoreCoins.ToString("0");
 
             highscore = PlayerPrefs.GetInt("highscore");
-            Highscore.text = "Maximo Puntaje: " + highscore.ToString("0");
+            highScore.text = "Maximo Puntaje: " + highscore.ToString("0");
 
             if (scoreCoins > highscore)
             {
                 highscore = scoreCoins;
-                Highscore.text = "Maximo Puntaje: " + highscore.ToString("0");
+                highScore.text = "Maximo Puntaje: " + highscore.ToString("0");
 
                 PlayerPrefs.SetInt("highscore", highscore);
             }

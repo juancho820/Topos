@@ -312,6 +312,7 @@
     <Compile Include="Assets\Juego\Script\detected.cs" />
     <Compile Include="Assets\Juego\Script\GameManager.cs" />
     <Compile Include="Assets\Juego\Script\Topos.cs" />
+    <Compile Include="Assets\Juego\Script\Touch.cs" />
     <Compile Include="Assets\Script\CameraFocusController.cs" />
     <Compile Include="Assets\Script\rotObj.cs" />
     <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
