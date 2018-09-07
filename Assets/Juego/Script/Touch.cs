@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Touch : MonoBehaviour {
 
+    public GameObject padre;
+
+    /*
     Renderer rend;
 
     public static bool tocado;
@@ -40,5 +43,10 @@ public class Touch : MonoBehaviour {
             GetComponent<Renderer>().material.color = newColor;
             yield return null;
         }
+    }
+    */
+    public void Desactivar()
+    {
+        padre.SetActive(false);
     }
 }

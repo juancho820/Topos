@@ -64,8 +64,9 @@ public class GameManager : MonoBehaviour {
                 }
                 else
                 {
+                    touch.transform.position = hit.point + new Vector3(0, 0.01f, 0);
                     touch.SetActive(true);
-                    touch.transform.position = hit.point + new Vector3 (0,0.008f,0);
+                    touch.GetComponentInChildren<Animator>().Play("Bounce");
                 }
             }
         }
