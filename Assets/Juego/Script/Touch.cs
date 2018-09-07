@@ -18,14 +18,16 @@ public class Touch : MonoBehaviour {
     {
         if(rend.material.color.a <= 0.05)
         {
-            gameObject.SetActive(false);
             Color resetColor = new Color(1, 1, 1, 1);
             GetComponent<Renderer>().material.color = resetColor;
+            gameObject.SetActive(false);
         }
     }
 
     private void OnEnable()
     {
+        Color resetColor = new Color(1, 1, 1, 1);
+        GetComponent<Renderer>().material.color = resetColor;
         StartCoroutine(FadeTo(0.0f, 0.3f));
     }
 

@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour {
 
     private float tiempo = 40;
 
+    private AudioSource auds;
+
     [SerializeField]
     public GameObject win;
     public GameObject touch;
@@ -37,6 +39,7 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        auds = GetComponent<AudioSource>();
         Time.timeScale = 1;
         Instance = this;
         score.text = "Puntaje: " + scoreCoins.ToString("0");
@@ -51,14 +54,18 @@ public class GameManager : MonoBehaviour {
             ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                touch.transform.position = new Vector3(hit.point.x,hit.point.y, 0.008f);
-                touch.SetActive(true);
                 if (hit.transform.tag == "Enemy")
                 {
+                    auds.Play();
                     if(noMasMonedas == false)
                     {
                         hit.collider.GetComponent<Topos>().tocado = true;
                     }
+                }
+                else
+                {
+                    touch.SetActive(true);
+                    touch.transform.position = hit.point + new Vector3 (0,0.008f,0);
                 }
             }
         }

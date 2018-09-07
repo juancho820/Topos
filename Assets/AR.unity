@@ -535,8 +535,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
-  m_Center: {x: 0, y: 1.23, z: 0}
+  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!1001 &130717991
 Prefab:
   m_ObjectHideFlags: 0
@@ -725,8 +725,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
-  m_Center: {x: 0, y: 1.23, z: 0}
+  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!4 &211380653 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4978993132652972, guid: 510a55b5c4aed6945a274d56d5790da3,
@@ -865,6 +865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 287186141}
   - component: {fileID: 287186140}
+  - component: {fileID: 287186142}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -897,12 +898,92 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 287186139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 264.72656, y: 274.65372, z: 12.1918335}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &287186142
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 287186139}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8881ac02bfa6e69469f6f9cd280ebe3b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &295748109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,8 +1097,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
-  m_Center: {x: 0, y: 1.23, z: 0}
+  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!1 &356107402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1441,8 +1522,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
-  m_Center: {x: 0, y: 1.23, z: 0}
+  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!4 &458832046 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4978993132652972, guid: 510a55b5c4aed6945a274d56d5790da3,
@@ -1617,7 +1698,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Tiempo
 --- !u!222 &532970716
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1689,8 +1770,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
-  m_Center: {x: 0, y: 1.23, z: 0}
+  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!1001 &550054421
 Prefab:
   m_ObjectHideFlags: 0
@@ -2666,8 +2747,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
-  m_Center: {x: 0, y: 1.23, z: 0}
+  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!1 &961837091
 GameObject:
   m_ObjectHideFlags: 0
@@ -3116,8 +3197,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
-  m_Center: {x: 0, y: 1.23, z: 0}
+  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!1001 &1035945466
 Prefab:
   m_ObjectHideFlags: 0
@@ -3809,7 +3890,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Puntaje
 --- !u!222 &1396872881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4592,8 +4673,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
-  m_Center: {x: 0, y: 1.23, z: 0}
+  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!1001 &1689052029
 Prefab:
   m_ObjectHideFlags: 0
@@ -4695,8 +4776,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 7, z: 3.5}
-  m_Center: {x: 0, y: 1.23, z: 0}
+  m_Size: {x: 3.5, y: 6, z: 3.5}
+  m_Center: {x: 0, y: 0.82, z: 0}
 --- !u!1001 &1730520990
 Prefab:
   m_ObjectHideFlags: 0
