@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     public GameObject win;
     public GameObject touch;
+    public GameObject touch2;
 
     private RaycastHit hit;
     private Ray ray;
@@ -42,8 +43,8 @@ public class GameManager : MonoBehaviour {
         auds = GetComponent<AudioSource>();
         Time.timeScale = 1;
         Instance = this;
-        score.text = "Puntaje: " + scoreCoins.ToString("0");
-        tiempoText.text = "Segundos: " + tiempo.ToString("0");
+        score.text = scoreCoins.ToString("0");
+        tiempoText.text = tiempo.ToString("0");
     }
 	
 	// Update is called once per frame
@@ -63,9 +64,13 @@ public class GameManager : MonoBehaviour {
                 }
                 else
                 {
-                    touch.transform.position = hit.point + new Vector3(0, 0.005f, 0);
+                    touch.transform.position = hit.point + new Vector3(0, 0.01f, 0);
                     touch.SetActive(true);
                     touch.GetComponentInChildren<Animator>().Play("Bounce");
+
+                    touch2.transform.position = hit.point + new Vector3(0, 0.01f, 0);
+                    touch2.SetActive(true);
+                    touch2.GetComponentInChildren<Animator>().Play("Bounce");
                 }
             }
         }
@@ -74,7 +79,7 @@ public class GameManager : MonoBehaviour {
     private void FixedUpdate()
     {
         tiempo -= Time.fixedDeltaTime;
-        tiempoText.text = "Segundos: " + tiempo.ToString("0");
+        tiempoText.text = tiempo.ToString("0");
 
         if(tiempo <= 0)
         {
@@ -99,7 +104,7 @@ public class GameManager : MonoBehaviour {
     {
         auds.Play();
         scoreCoins++;
-        score.text = "Puntaje: " + scoreCoins.ToString("0");
+        score.text = scoreCoins.ToString("0");
     }
 
     public void Resetiar()
