@@ -56,7 +56,6 @@ public class GameManager : MonoBehaviour {
             {
                 if (hit.transform.tag == "Enemy")
                 {
-                    auds.Play();
                     if(noMasMonedas == false)
                     {
                         hit.collider.GetComponent<Topos>().tocado = true;
@@ -64,7 +63,7 @@ public class GameManager : MonoBehaviour {
                 }
                 else
                 {
-                    touch.transform.position = hit.point + new Vector3(0, 0.01f, 0);
+                    touch.transform.position = hit.point + new Vector3(0, 0.005f, 0);
                     touch.SetActive(true);
                     touch.GetComponentInChildren<Animator>().Play("Bounce");
                 }
@@ -98,6 +97,7 @@ public class GameManager : MonoBehaviour {
     }
     public void GetCoin()
     {
+        auds.Play();
         scoreCoins++;
         score.text = "Puntaje: " + scoreCoins.ToString("0");
     }
